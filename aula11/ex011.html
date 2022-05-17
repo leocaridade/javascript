@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paises</title>
+</head>
+<body>
+    Qual pais voce nasceu? <input type="text" id="pais">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular() {
+            var pais = window.document.getElementById('pais')
+            var res = window.document.querySelector('div#res')
+            if (pais == 'Brasil') {
+                res.innerHTML = `<p>Voce e <strong>Brasileiro</strong></p>`
+            } else {
+                res.innerHTML = `<p>Voce e <strong>Estrangeiro</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>
